@@ -12,7 +12,7 @@
     <View
         android:id="@+id/view2"
         android:layout_width="250sp"
-        android:layout_height="3sp"
+        android:layout_height="3dp"
         android:layout_marginStart="80sp"
         android:layout_marginBottom="28sp"
         android:background="@drawable/textinput"
@@ -172,7 +172,7 @@
         android:radius="30sp"
         android:text="Forgot Username"
         android:textColor="#006aff"
-
+        android:onClick="resetUsername"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

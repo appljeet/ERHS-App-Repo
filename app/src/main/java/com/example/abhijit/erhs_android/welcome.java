@@ -2,20 +2,19 @@ package com.example.abhijit.erhs_android;
 
 import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
-import android.os.Bundle;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
-
-public class signin extends AppCompatActivity {
+public class welcome extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        setContentView(R.layout.activity_welcome);
 
         //fullscreen
         requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -32,10 +31,14 @@ public class signin extends AppCompatActivity {
 
 
     }
-    public void resetUsername(View view){
-        Intent intent = new Intent(this, resetUsername.class);
+
+
+
+    public void openLoginPage(View view){
+        Intent intent = new Intent(this, signin.class);
         startActivity(intent);
     }
+
 }
 
-
+//TODO: go on the xml file for this activity and there's more comments there

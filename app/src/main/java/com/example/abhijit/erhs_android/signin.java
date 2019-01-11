@@ -14,8 +14,6 @@ public class signin extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
 
         //fullscreen
         requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -28,6 +26,13 @@ public class signin extends AppCompatActivity {
         animationDrawable.setEnterFadeDuration(2000);
         animationDrawable.setExitFadeDuration(4000);
         animationDrawable.start();
+
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_signin);
+
+
+
+
 
 
 

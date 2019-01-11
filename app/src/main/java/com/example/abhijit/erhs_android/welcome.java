@@ -13,13 +13,11 @@ public class welcome extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_welcome);
-
         //fullscreen
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_signin);
+
 
         //gradient animation
         ConstraintLayout constraintLayout = findViewById(R.id.signin);
@@ -27,6 +25,14 @@ public class welcome extends AppCompatActivity {
         animationDrawable.setEnterFadeDuration(2000);
         animationDrawable.setExitFadeDuration(4000);
         animationDrawable.start();
+
+
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_welcome);
+
+
+
+
 
 
 
@@ -39,6 +45,16 @@ public class welcome extends AppCompatActivity {
         startActivity(intent);
     }
 
+
+
+
+    public void openCreateAccount(View view){
+        Intent intent = new Intent(this, createAccount.class);
+        startActivity(intent);
+    }
+
 }
+
+
 
 //TODO: go on the xml file for this activity and there's more comments there

@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 
-public class resetUsername extends AppCompatActivity {
+public class createAccount extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +17,6 @@ public class resetUsername extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_signin);
 
-
         //gradient animation
         ConstraintLayout constraintLayout = findViewById(R.id.signin);
         AnimationDrawable animationDrawable = (AnimationDrawable) constraintLayout.getBackground();
@@ -25,10 +24,13 @@ public class resetUsername extends AppCompatActivity {
         animationDrawable.setExitFadeDuration(4000);
         animationDrawable.start();
 
-
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_reset_username);
+        setContentView(R.layout.activity_create_account);
+
+
+
 
 
     }
+
 }
